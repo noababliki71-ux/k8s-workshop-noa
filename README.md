@@ -1,13 +1,14 @@
-Kubernetes Workshop – Noa
+# k8s-workshop-noa
 
-Deployed:
-- MySQL (StatefulSet + PVC + Secret)
-- WordPress (Deployment + Service)
-- Ingress with Nginx
-- Monitoring stack using Helm (Prometheus + Grafana)
+Kubernetes deployment of WordPress with MySQL.
 
-Verification:
-- kubectl get pods -n wp
-- kubectl get svc -n wp
-- kubectl get ingress -n wp
+## Components
+- WordPress Deployment
+- MySQL StatefulSet
+- Ingress
+- kube-prom-stack monitoring
 
+## How to run
+kubectl apply -f mysql.yaml
+kubectl apply -f wordpress.yaml
+kubectl apply -f ingress.yaml
