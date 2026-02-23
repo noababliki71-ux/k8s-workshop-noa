@@ -10,3 +10,4 @@ Verification:
 - kubectl get pods -n wp
 - kubectl get svc -n wp
 - kubectl get ingress -n wp
+
